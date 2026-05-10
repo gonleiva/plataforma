@@ -1,22 +1,17 @@
 package src;
 
-public class Jugador extends Personaje{
-    private int puntaje;
-
-    public Jugador(String unNombre){
-        nombre=unNombre;
-        vida=100;
+public class Tortuga extends Personaje{
+    public Tortuga(){
+        daño=5;
         posicionX=0;
         posicionY=0;
-        puntaje=0;
-        daño=10;
-        velocidad=10;
+        nombre="Tortuga";
+        vida=100;
+        velocidad=1;
     }
-    public int obtenerPuntaje(){
-        return puntaje;
-    }
+
     @Override
-    public void moverALaDerecha(){
+    public void moverALaDerecha() {
         posicionX++;
     }
     @Override
